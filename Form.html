@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+ 
+
+</head>
+<body>
+    <div class="container">
+        <p>Ship to:</p>
+        <address>
+            <h5>Rahul More<br>Hanuman GYM (Aanabhau Sathe Abhyashika)<br>PIMPRI CHINCHWAD MAHARASHTRA 411044<br>Phone: 9623647242</h5>
+        </address>
+        <hr class="line">
+
+        <div>
+            <h3>Order Id: 407-2279624-0692324</h3>
+            <p>Thank you for buying from DS Distributors:</p>
+        </div>
+
+        <div>
+            <form action="#" method="post">
+                <textarea id="message" name="message" rows="5" required>
+                    Rahul More
+                    Hanuman GYM (Aanabhau Sathe Abhyashika)
+                    PIMPRI CHINCHWAD MAHARASHTRA 411044
+                    Phone: 9623647242
+                </textarea>
+            </form>
+        </div>
+
+        <div>
+            <h2>Order Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Product</th>
+                        <th>Unit Price</th>
+                        <th>Order Total</th>
+                    </tr>
+                </thead>
+                <tbody id="orderDetailsBody">
+                    <!-- This tbody will be populated dynamically -->
+                    <tr>
+                        <td>2</td>
+                        <td>Product 1</td>
+                        <td>$10</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Product 2</td>
+                        <td>$15</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Product 3</td>
+                        <td>$8</td>
+                        <td>$24</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td id="totalAmount">$74</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div>
+            <p>Thank you for buying on Amazon Marketplace. To provide feedback for the seller, please visit www.amazon.in/feedback. To contact the seller, go to your order in your account, click the seller name under the appropriate product, then in the 'Future Information' click 'Contact Seller'.</p>
+            <hr class="line">
+        </div>
+
+        <div>
+            <h4>Amazon.in Declaration Letter<br>To Whomsoever It May Concern</h4>
+            <p>Rahul has placed the following order:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Quantity</th>
+                        <th>Product</th>
+                    </tr>
+                </thead>
+                <tbody id="amazonDeclarationBody">
+                    <!-- This tbody will be populated dynamically -->
+                    <tr>
+                        <td>2</td>
+                        <td>Product 1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Product 2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Product 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h3>Order Id: 407-2279624-0692324</h3>
+            <p>Rahul More<br>Hanuman GYM (Aanabhau Sathe Abhyashika)<br>PIMPRI CHINCHWAD MAHARASHTRA 411044<br>Phone: 9623647242</p>
+        </div>
+
+        <div>
+            <p>I hereby confirm that the said above goods are being purchased for my internal or personal purpose and not for resale. I further understand and agree to Amazon's terms and conditions for sales available at www.amazon.in or upon request.</p>
+        </div>
+        <button onclick="window.print()">Print</button>
+
+    </div>
+</body>
+</html>
